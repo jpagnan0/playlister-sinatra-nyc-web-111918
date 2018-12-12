@@ -1,0 +1,7 @@
+<h1>Edit <%= @song.name %></h1>
+
+<form action="/songs/<%= @song.id %>/edit" method="post">
+  <input type="hidden" name="_method" value="patch">
+  Name: <input type="text" name="song[name]" value="<%= @song.name %>">
+  <input type="submit" value="butthole">
+</form>
